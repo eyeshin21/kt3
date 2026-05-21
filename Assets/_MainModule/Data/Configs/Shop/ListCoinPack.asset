@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f02b3f0ed5da74bb11de2e4232c177, type: 3}
+  m_Name: ListCoinPack
+  m_EditorClassIdentifier: 
+  listShopPack:
+  - iapKey: 1
+    title: Coin Pack 1
+    description: 
+    listReward:
+    - type: 0
+      quantity: 1000
+  - iapKey: 2
+    title: Coin Pack 2
+    description: 
+    listReward:
+    - type: 0
+      quantity: 5000
+  - iapKey: 3
+    title: Coin Pack 3
+    description: 
+    listReward:
+    - type: 0
+      quantity: 10000
+  - iapKey: 4
+    title: Coin Pack 4
+    description: 
+    listReward:
+    - type: 0
+      quantity: 25000
+  - iapKey: 5
+    title: Coin Pack 5
+    description: 
+    listReward:
+    - type: 0
+      quantity: 50000
+  - iapKey: 6
+    title: Coin Pack 6
+    description: 
+    listReward:
+    - type: 0
+      quantity: 100000

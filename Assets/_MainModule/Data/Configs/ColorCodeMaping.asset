@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e78fbe8ff49b1a47be46413d6b18e67, type: 3}
+  m_Name: ColorCodeMaping
+  m_EditorClassIdentifier: 
+  colorCodeMaping:
+    _serializedList:
+    - Key: FF2929
+      Value: 1
+    - Key: 3029FF
+      Value: 2
+    - Key: 41FF2B
+      Value: 3
+    - Key: FFFF2B
+      Value: 4
+    - Key: AE2BFF
+      Value: 5
+    - Key: FF8A2B
+      Value: 6
+    - Key: FF85E2
+      Value: 7
+    - Key: 48ECF7
+      Value: 8
+    - Key: F2FCFC
+      Value: 9
+    - Key: 0D0D0D
+      Value: 10
+    - Key: 150090
+      Value: 11
+    - Key: 6D6D6D
+      Value: 12
+    - Key: 78866B
+      Value: 13
+  colorTypeMaping:
+    _serializedList:
+    - Key: 1
+      Value: FF2929
+    - Key: 2
+      Value: 3029FF
+    - Key: 3
+      Value: 41FF2B
+    - Key: 4
+      Value: FFFF2B
+    - Key: 5
+      Value: AE2BFF
+    - Key: 6
+      Value: FF8A2B
+    - Key: 7
+      Value: FF85E2
+    - Key: 8
+      Value: 48ECF7
+    - Key: 9
+      Value: F2FCFC
+    - Key: 10
+      Value: 0D0D0D
+    - Key: 11
+      Value: 150090
+    - Key: 12
+      Value: 6D6D6D
+    - Key: 13
+      Value: 78866B

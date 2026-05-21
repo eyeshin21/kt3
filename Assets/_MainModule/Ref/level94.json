@@ -1,0 +1,2470 @@
+{
+  "levelNumber": 94,
+  "levelVersionCode": 1,
+  "collectorArea": {
+    "gridWidth": 7,
+    "gridHeight": 7,
+    "singleBlockCollectors": [
+      {
+        "x": 1,
+        "y": 0,
+        "color": "do"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "color": "pk"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "color": "pk"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "color": "w"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "color": "db"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "color": "og"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "color": "db"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "color": "dr"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "color": "db"
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "color": "og"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "color": "do"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "color": "w"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "color": "dr"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "color": "db"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "color": "dr"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "color": "w"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "color": "do"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "color": "og"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "color": "w"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "color": "do"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "color": "og"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "color": "dr"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "color": "pk"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "color": "db"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "color": "do"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "color": "w"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "color": "do"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "color": "w"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "color": "db"
+      }
+    ],
+    "mysteryCollectors": [],
+    "iceCollectors": [
+      {
+        "x": 6,
+        "y": 2,
+        "hiddenColor": "og",
+        "iceCapacity": 8
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "hiddenColor": "og",
+        "iceCapacity": 12
+      }
+    ],
+    "woodBoxCollectors": [
+      {
+        "x": 6,
+        "y": 6,
+        "hiddenColor": "pk"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "hiddenColor": "db"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "hiddenColor": "og"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "hiddenColor": "dr"
+      }
+    ],
+    "deadCells": [
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 5
+      },
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 4
+      }
+    ],
+    "tunnels": [
+      {
+        "x": 0,
+        "y": 4,
+        "direction": "Right",
+        "collectorQueue": [
+          {
+            "color": "db"
+          },
+          {
+            "color": "w"
+          },
+          {
+            "color": "pk"
+          },
+          {
+            "color": "w"
+          },
+          {
+            "color": "og"
+          }
+        ]
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "direction": "Left",
+        "collectorQueue": [
+          {
+            "color": "pk"
+          },
+          {
+            "color": "db"
+          },
+          {
+            "color": "pk"
+          },
+          {
+            "color": "og"
+          },
+          {
+            "color": "do"
+          }
+        ]
+      }
+    ],
+    "pinBlockers": [
+      {
+        "x": 5,
+        "y": 2,
+        "direction": "Left",
+        "blockCount": 0
+      }
+    ],
+    "keyLocks": [],
+    "tiedPairs": null
+  },
+  "hexStackArea": {
+    "gridWidth": 13,
+    "gridHeight": 28,
+    "stacks": [
+      {
+        "x": 0,
+        "y": 0,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 0,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 1,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 2,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 2,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 3,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 4,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 5,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 6,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 6,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 7,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 8,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 8,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 9,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 9,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 10,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 10,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 10,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 10,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 10,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 10,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 10,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 11,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 11,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 11,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 11,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 11,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 11,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 12,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 12,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 12,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 12,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 12,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 12,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 13,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 13,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 13,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 13,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 13,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 13,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 14,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 14,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 14,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 14,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 14,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 14,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 14,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 15,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 15,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 15,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 15,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 15,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 15,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 16,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 16,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 16,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 16,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 16,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 16,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 17,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 17,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 17,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 17,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 17,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 17,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 18,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 18,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 18,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 18,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 18,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 18,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 18,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 19,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 19,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 19,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 19,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 19,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 19,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 20,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 20,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 20,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 20,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 20,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 20,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr",
+          "dr"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 20,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 21,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 21,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 21,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 21,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 21,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 21,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 22,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 22,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 22,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 22,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 22,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 22,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 23,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 23,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 23,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 23,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 23,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 23,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 24,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 24,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 24,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 24,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 24,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 24,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 24,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 25,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 25,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 25,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 25,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 9,
+        "y": 25,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 11,
+        "y": 25,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 26,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 26,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 4,
+        "y": 26,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "pk",
+          "pk",
+          "pk"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 26,
+        "colors": [
+          "pk",
+          "pk",
+          "pk",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 8,
+        "y": 26,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 10,
+        "y": 26,
+        "colors": [
+          "dr",
+          "dr",
+          "dr",
+          "db",
+          "db",
+          "db"
+        ]
+      },
+      {
+        "x": 12,
+        "y": 26,
+        "colors": [
+          "w",
+          "w",
+          "w",
+          "og",
+          "og",
+          "og"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 27,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 3,
+        "y": 27,
+        "colors": [
+          "do",
+          "do",
+          "do",
+          "do",
+          "do",
+          "do"
+        ]
+      },
+      {
+        "x": 5,
+        "y": 27,
+        "colors": [
+          "og",
+          "og",
+          "og",
+          "w",
+          "w",
+          "w"
+        ]
+      },
+      {
+        "x": 7,
+        "y": 27,
+        "colors": [
+          "db",
+          "db",
+          "db",
+          "w",
+          "w",
+          "w"
+        ]
+      }
+    ],
+    "tunnels": []
+  },
+  "editorMeta": {
+    "totalBlocks": 1080,
+    "colorCount": 6,
+    "maxColorsPerStack": 2,
+    "heightMin": 6,
+    "heightMax": 6,
+    "randomness": 0.0,
+    "verticalPercent": 100.0,
+    "horizontalPercent": 0.0,
+    "clusteringEnabled": true,
+    "clusteringPercent": 100.0,
+    "mysteryPercent": 0.0,
+    "colorsPerStackRatios": [
+      79.0
+    ],
+    "zoneCount": 1
+  }
+}
