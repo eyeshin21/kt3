@@ -11,6 +11,7 @@ namespace HexaFall.Gameplay.CoreController
         [SerializeField] private ColorMaterialMaping m_colorMaterialMapping;
         [SerializeField] private Transform m_keyTargetPos;
         [SerializeField] private MeshRenderer m_lockBody;
+        [SerializeField] private MeshRenderer m_lockTop;
 
         public string       LockId      { get; private set; }
         public ColorType    Color       { get; private set; }
@@ -25,9 +26,15 @@ namespace HexaFall.Gameplay.CoreController
             Position    = definition.position;
             IsDestroyed = false;
             gameObject.SetActive(true);
+            m_lockTop.transform.localRotation = Quaternion.identity;
             if (m_lockBody != null)
             {
-                m_lockBody.material = m_colorMaterialMapping.materialLockBody[Color];
+                m_lockBody.material = m_colorMaterialMapping.materialKeyBody[Color];
+            }
+
+            if(m_lockTop != null)
+            {
+                m_lockTop.material = m_colorMaterialMapping.materialKeyBody[Color];
             }
         }
 
@@ -39,6 +46,8 @@ namespace HexaFall.Gameplay.CoreController
         public IEnumerator PlayDestroy(float delay, float duration)
         {
             MarkDestroyed();
+            m_lockTop.transform.DOLocalRotate(Vector3.up * 45, duration);
+
             yield return new WaitForSeconds(delay);
             if (duration > 0f)
             {

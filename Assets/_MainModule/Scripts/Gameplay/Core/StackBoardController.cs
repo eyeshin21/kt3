@@ -6,6 +6,7 @@ using HexaFall.Gameplay.Core;
 using HexaFall.Gameplay.Data;
 using UnityEngine;
 using Lean.Pool;
+using HexaFall.Gameplay.Runtime;
 
 namespace HexaFall.Gameplay.CoreController
 {
@@ -15,7 +16,8 @@ namespace HexaFall.Gameplay.CoreController
         [SerializeField] private StackController stackPrefab;
         [SerializeField] private Transform stackRoot;
         [SerializeField] private Vector2 cellSpacing = new Vector2(1f, 1f);
-        [SerializeField] private float stackFlowDuration = 0.2f;
+
+        private float stackFlowDuration => GameController.Instance.GameplayTuningConfig.stackFlowDuration;
 
         private readonly List<StackController> views = new List<StackController>();
         private int columns;
@@ -70,19 +72,29 @@ namespace HexaFall.Gameplay.CoreController
                 .FirstOrDefault();
         }
 
-        internal List<StackController> FindAllMatchingEligibleStacks(ColorType targetColor)
+        internal List<StackController> FindAllMatchingEligibleStacks(ColorType targetColor, bool lowestRowOnly = true)
         {
             var occupiedStacks = views.Where(stack => stack.HasBlocks && !stack.IsMoving).ToList();
             if (occupiedStacks.Count == 0)
             {
-                return null;
+                return new List<StackController>();
             }
 
-            var lowestRow = occupiedStacks.Min(stack => stack.Position.Row);
-            return occupiedStacks
-                .Where(stack => stack.Position.Row == lowestRow && stack.HasColor(targetColor))
-                .OrderBy(stack => stack.Position.Column)
-                .ToList();
+            if (lowestRowOnly)
+            {
+                var lowestRow = occupiedStacks.Min(stack => stack.Position.Row);
+                return occupiedStacks
+                    .Where(stack => stack.Position.Row == lowestRow && stack.HasColor(targetColor))
+                    .OrderBy(stack => stack.Position.Column)
+                    .ToList();
+            }
+            else
+            {
+                return occupiedStacks
+                    .Where(stack => stack.HasColor(targetColor))
+                    .OrderBy(stack => stack.Position.Row).ThenBy(stack => stack.Position.Column)
+                    .ToList();
+            }
         }
 
         public IEnumerator FlowStacksToLowestPlaceholders(float delay = 0f)
@@ -123,15 +135,31 @@ namespace HexaFall.Gameplay.CoreController
                             var posRight = new GridPosition(r + 1, rightCol);
 
                             StackController pulledStack = null;
-                            if (grid.TryGetValue(posLeft, out var stackLeft))
+                            if (r % 2 == 0)
                             {
-                                pulledStack = stackLeft;
-                                grid.Remove(posLeft);
+                                if (grid.TryGetValue(posLeft, out var stackLeft))
+                                {
+                                    pulledStack = stackLeft;
+                                    grid.Remove(posLeft);
+                                }
+                                else if (grid.TryGetValue(posRight, out var stackRight))
+                                {
+                                    pulledStack = stackRight;
+                                    grid.Remove(posRight);
+                                }
                             }
-                            else if (grid.TryGetValue(posRight, out var stackRight))
+                            else
                             {
-                                pulledStack = stackRight;
-                                grid.Remove(posRight);
+                                if (grid.TryGetValue(posRight, out var stackRight))
+                                {
+                                    pulledStack = stackRight;
+                                    grid.Remove(posRight);
+                                }
+                                else if (grid.TryGetValue(posLeft, out var stackLeft))
+                                {
+                                    pulledStack = stackLeft;
+                                    grid.Remove(posLeft);
+                                }
                             }
 
                             if (pulledStack != null)

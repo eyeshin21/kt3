@@ -18,11 +18,15 @@ MonoBehaviour:
   maximumBoxCapacity: 100
   maximumStackBlocks: 6
   boxMoveDuration: 0.25
-  blockFlyDuration: 0.25
+  blockFlyDuration: 0.45
   boxClearDuration: 0.2
   waitingWarningFreeSlots: 1
   enableBasicHaptics: 1
+  shuffleAnimDuration: 0.25
+  boosterTargetHighlightDuration: 0.15
   boxMoveStepDuration: 0.1
+  delayEachBlockFill: 0.1
+  stackFlowDuration: 0.45
   validFillAngle: 30
   stackForwardDirection: {x: 0, y: 0, z: -1}
   activeConveyorZone: {x: 0.1, y: 0.9}

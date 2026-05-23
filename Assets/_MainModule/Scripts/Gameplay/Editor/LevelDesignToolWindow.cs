@@ -1849,7 +1849,6 @@ namespace HexaFall.Gameplay.Editor
 
             currentLevel.stackBoard = new StackBoardData(sW, sH, stacksList);
 
-            currentLevel.waitingSlots = 6;
             EditorUtility.SetDirty(currentLevel);
             AssetDatabase.SaveAssets();
 

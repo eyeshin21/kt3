@@ -10,7 +10,7 @@ namespace HexaFall.Gameplay.CoreController
     /// <summary>
     /// Waiting-area component that owns waiting box IDs and slot rendering.
     /// </summary>
-    public sealed class WaitingAreaController : MonoBehaviour
+    public sealed partial class WaitingAreaController : MonoBehaviour
     {
         [SerializeField] private Transform slotRoot;
         [SerializeField] private WaitingSlotController slotPrefab;

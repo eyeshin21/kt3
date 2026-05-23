@@ -18,7 +18,11 @@ namespace HexaFall.Gameplay.Config
         [SerializeField] private float boxClearDuration = 0.2f;
         [SerializeField] private int waitingWarningFreeSlots = 1;
         [SerializeField] private bool enableBasicHaptics = true;
+        [SerializeField] private float shuffleAnimDuration = 0.25f;
+        [SerializeField] private float boosterTargetHighlightDuration = 0.15f;
         public float boxMoveStepDuration = 0.1f;
+        public float delayEachBlockFill = 0.1f;
+        public float stackFlowDuration = 0.5f;
 
         [Header("Fill Rules")]
         [SerializeField] private float validFillAngle = 30f;
@@ -56,6 +60,8 @@ namespace HexaFall.Gameplay.Config
         public float BoxClearDuration => Mathf.Max(0f, boxClearDuration);
         public int WaitingWarningFreeSlots => Mathf.Max(0, waitingWarningFreeSlots);
         public bool EnableBasicHaptics => enableBasicHaptics;
+        public float ShuffleAnimDuration => Mathf.Max(0f, shuffleAnimDuration);
+        public float BoosterTargetHighlightDuration => Mathf.Max(0f, boosterTargetHighlightDuration);
 
         public float ValidFillAngle => validFillAngle;
         public Vector3 StackForwardDirection => stackForwardDirection;

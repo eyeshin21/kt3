@@ -1595,8 +1595,8 @@ MonoBehaviour:
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 0
-        column: 5
+        row: 1
+        column: 2
       blocksBottomToTop: 050000000500000005000000050000000500000005000000
       isHidden: 0
     - useExplicitPosition: 1
@@ -1619,8 +1619,8 @@ MonoBehaviour:
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 1
-        column: 2
+        row: 0
+        column: 5
       blocksBottomToTop: 020000000200000002000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1

@@ -138,6 +138,20 @@ namespace HexaFall.Gameplay.CoreController
             boxController = LeanPool.Spawn(m_boxPrefab, transform);
         }
 
+        public void SetBoxController(BoxController newBox)
+        {
+            boxController = newBox;
+            if (boxController != null)
+            {
+                boxController.transform.SetParent(transform, true);
+            }
+        }
+
+        public void DetachBoxController()
+        {
+            boxController = null;
+        }
+
         private void CheckBorder()
         {
             HideAllBorders();

@@ -1,3 +1,4 @@
+using HexaFall.Gameplay.Config;
 using HexaFall.Gameplay.Data;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,10 +22,13 @@ namespace HexaFall.Gameplay.Runtime
         [SerializeField] private int maxLevel = 100;
         [SerializeField] private BoosterManager m_boosterManager;
         [SerializeField] private TutorialManager m_tutorialManager;
+        [SerializeField] private GameplayTuningConfig m_gameTuningConfig;
 
         [SerializeField] private GameConfig m_gameConfig;
 
         public GameConfig GameConfig => m_gameConfig;
+
+        public GameplayTuningConfig GameplayTuningConfig => m_gameTuningConfig;
 
         public GameState CurrentState { get; private set; }
 
@@ -100,7 +104,6 @@ namespace HexaFall.Gameplay.Runtime
             CurrentState = GameState.PLAYING;
             CurrentLevel = level;
             m_levelController.SetData(CurrentLevelData);
-            BoosterManager.InitializeBoosters();
             UIManager.Instance.GetPanel<UIGamePlay>().Show();
 
             CGTeamBridge.Instance.OnGameStarted(CurrentLevel, CurrentLevelData.levelType.ToString());

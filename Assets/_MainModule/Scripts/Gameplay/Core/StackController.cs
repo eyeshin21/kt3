@@ -117,7 +117,7 @@ namespace HexaFall.Gameplay.CoreController
             }
         }
 
-        public IEnumerator PlayDetachedBlockFlight(ColorType color, Vector3 startWorldPosition, Vector3 targetWorldPosition, float duration, HexaBlock flyingBlock = null)
+        public IEnumerator PlayDetachedBlockFlight(ColorType color, Vector3 startWorldPosition, Transform targetTransform, float duration, HexaBlock flyingBlock = null)
         {
             if (flyingBlock == null)
             {
@@ -132,12 +132,13 @@ namespace HexaFall.Gameplay.CoreController
                 flyingBlock.transform.SetParent(null, true);
             }
 
+            flyingBlock.transform.SetParent(targetTransform, true);
             flyingBlock.transform.localScale = Vector3.one;
 
             if (duration <= 0f)
             {
-                flyingBlock.transform.position = targetWorldPosition;
-                flyingBlock.transform.rotation = Quaternion.Euler(-180f, 90f, 0f);
+                flyingBlock.transform.localPosition = Vector3.zero;
+                flyingBlock.transform.localRotation = Quaternion.Euler(-180f, 90f, 0f);
             }
             else
             {
@@ -157,7 +158,8 @@ namespace HexaFall.Gameplay.CoreController
                 float flightDuration = duration * 0.7f;
                 float landDuration = duration * 0.15f;
 
-                Vector3 lookDir = targetWorldPosition - startWorldPosition;
+                // 1. Anticipation (Squash + LookAt)
+                Vector3 lookDir = targetTransform.position - startWorldPosition;
                 lookDir.y = 0;
                 if (lookDir != Vector3.zero)
                 {
@@ -167,18 +169,19 @@ namespace HexaFall.Gameplay.CoreController
                 seq.Append(flyingBlock.transform.DOScale(new Vector3(1.3f, 0.7f, 1.3f), anticDuration).SetEase(Ease.OutQuad));
                 
                 Sequence flightScale = DOTween.Sequence();
-                flightScale.Append(flyingBlock.transform.DOScale(new Vector3(0.8f, 1.4f, 0.8f), flightDuration * 0.3f).SetEase(Ease.OutQuad));
+                flightScale.Append(flyingBlock.transform.DOScale(new Vector3(0.8f, 1.56f, 0.8f), flightDuration * 0.3f).SetEase(Ease.OutQuad));
                 flightScale.Append(flyingBlock.transform.DOScale(Vector3.one, flightDuration * 0.4f).SetEase(Ease.InOutSine));
-                flightScale.Append(flyingBlock.transform.DOScale(new Vector3(0.9f, 1.2f, 0.9f), flightDuration * 0.3f).SetEase(Ease.InQuad));
+                flightScale.Append(flyingBlock.transform.DOScale(new Vector3(0.9f, 1.23f, 0.9f), flightDuration * 0.3f).SetEase(Ease.InQuad));
                 
                 float arcHeight = flightArcHeight + UnityEngine.Random.Range(-0.2f, 0.3f);
-                seq.Append(flyingBlock.transform.DOJump(targetWorldPosition, Mathf.Max(0.2f, arcHeight), 1, flightDuration).SetEase(Ease.Linear));
+                seq.Append(flyingBlock.transform.DOLocalJump(Vector3.zero, Mathf.Max(0.2f, arcHeight), 1, flightDuration).SetEase(Ease.Linear));
                 seq.Join(flightScale);
                 
                 seq.Join(flyingBlock.transform.DOLocalRotate(new Vector3(360f, 0f, 0f), flightDuration, RotateMode.LocalAxisAdd).SetEase(Ease.InOutSine));
 
-                seq.Append(flyingBlock.transform.DOScale(new Vector3(1.5f, 0.4f, 1.5f), landDuration * 0.5f).SetEase(Ease.OutQuad));
-                seq.Append(flyingBlock.transform.DOScale(Vector3.zero, landDuration * 0.5f).SetEase(Ease.InBack));
+                seq.Append(flyingBlock.transform.DOScale(new Vector3(1.5f, 0.4f, 1.5f), landDuration * 0.25f).SetEase(Ease.OutQuad));
+                seq.Append(flyingBlock.transform.DOScale(new Vector3(1f, 1f, 1f), landDuration * 0.25f).SetEase(Ease.OutQuad));
+                seq.Append(flyingBlock.transform.DOScale(Vector3.zero, landDuration * 0.2f).SetEase(Ease.InBack).SetDelay(landDuration * 0.3f));
 
                 yield return seq.WaitForCompletion();
             }

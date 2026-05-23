@@ -16,9 +16,10 @@ public class UIGamePlay : PanelBase
     [SerializeField] private CanvasGroup m_canvasGroup;
 
     [Header("Button Boosters")]
-    [SerializeField] private ButtonBooster m_buttonMagicWand;
-    [SerializeField] private ButtonBooster m_buttonBroom;
-    [SerializeField] private ButtonBooster m_buttonMagnet;
+    [SerializeField] private ButtonBooster m_buttonAddSlot;
+    [SerializeField] private ButtonBooster m_buttonSuperPicker;
+    [SerializeField] private ButtonBooster m_buttonShuffle;
+
 
     [SerializeField] private TextMeshProUGUI m_textTime;
 
@@ -34,9 +35,9 @@ public class UIGamePlay : PanelBase
     {
         m_buttonReplay.onClick.AddListener(OnClickReplay);
         m_buttonSetting.onClick.AddListener(OnClickSetting);
-        m_buttonMagicWand.OnClick.AddListener(OnClickMagicWand);
-        m_buttonBroom.OnClick.AddListener(OnClickBroom);
-        m_buttonMagnet.OnClick.AddListener(OnClickMagnet);
+        m_buttonAddSlot.OnClick.AddListener(OnClickAddSlot);
+        m_buttonSuperPicker.OnClick.AddListener(OnClickSuperPicker);
+        m_buttonShuffle.OnClick.AddListener(OnClickShuffle);
 
         m_buttonEnableCheat.onClick.AddListener(CountEnableCheat);
     }
@@ -82,9 +83,9 @@ public class UIGamePlay : PanelBase
         //m_textQuantityBroom.text = GameController.Instance.BoosterManager.GetBroomCount().ToString();
         //m_textQuantityMagnet.text = GameController.Instance.BoosterManager.GetMagnetCount().ToString();
 
-        m_buttonMagicWand.UpdateUI();
-        m_buttonBroom.UpdateUI();
-        m_buttonMagnet.UpdateUI();
+        m_buttonAddSlot.UpdateUI();
+        m_buttonSuperPicker.UpdateUI();
+        m_buttonShuffle.UpdateUI();
     }
 
     private void Update()
@@ -92,32 +93,21 @@ public class UIGamePlay : PanelBase
         //m_textTime.text = TimeSpan.FromSeconds(GameController.Instance.CurrentRemainingTime).ToString(@"mm\:ss");
     }
 
-    public ButtonBooster GetButtonBooster(BoosterType boosterType)
+    private void OnClickShuffle()
     {
-        return boosterType switch
-        {
-            BoosterType.MAGIC_WAND => m_buttonMagicWand,
-            BoosterType.BROOM => m_buttonBroom,
-            BoosterType.MAGNET => m_buttonMagnet,
-            _ => throw new ArgumentOutOfRangeException(nameof(boosterType), boosterType, null)
-        };
-    }
-
-    private void OnClickMagnet()
-    {
-        //GameController.Instance.BoosterManager.UseMagnet();
+        GameController.Instance.BoosterManager.TryActivate(HexaFall.Gameplay.Booster.BoosterType.Shuffle);
         UpdateUI();
     }
 
-    private void OnClickBroom()
+    private void OnClickSuperPicker()
     {
-        //GameController.Instance.BoosterManager.UseBroom();
+        GameController.Instance.BoosterManager.TryActivate(HexaFall.Gameplay.Booster.BoosterType.SuperPickerBox);
         UpdateUI();
     }
 
-    private void OnClickMagicWand()
+    private void OnClickAddSlot()
     {
-        //GameController.Instance.BoosterManager.UseMagicWand();
+        GameController.Instance.BoosterManager.TryActivate(HexaFall.Gameplay.Booster.BoosterType.AddSlot);
         UpdateUI();
     }
 
@@ -125,6 +115,7 @@ public class UIGamePlay : PanelBase
     {
         GameController.Instance.PauseGame();
     }
+
 
     private void OnClickReplay()
     {

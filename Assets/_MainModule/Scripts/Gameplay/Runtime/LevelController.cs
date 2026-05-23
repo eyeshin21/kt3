@@ -24,6 +24,7 @@ namespace HexaFall.Gameplay.Runtime
         [SerializeField] private AudioClip boxClearedClip;
         [SerializeField] private AudioClip winClip;
         [SerializeField] private AudioClip failClip;
+        [SerializeField] private BoosterManager boosterManager;
 
         private readonly ILevelValidator levelValidator = new LevelValidator();
         private bool isLevelEnded;
@@ -69,6 +70,7 @@ namespace HexaFall.Gameplay.Runtime
             pendingFills.Clear();
             runningRoutines.Clear();
             BindViews();
+            boosterManager?.InitializeBoosters(this, gridBoardController, waitingArea);
             ApplyViews(new List<GameplayEvent>());
         }
 
@@ -91,7 +93,8 @@ namespace HexaFall.Gameplay.Runtime
                 if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
                     return;
 
-                if (!CanGridSelectBox()) return;
+                bool isTargeting = boosterManager != null && boosterManager.IsTargeting;
+                if (!CanGridSelectBox() && !isTargeting) return;
 
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit[] hits = Physics.SphereCastAll(ray, 0.3f);
@@ -102,7 +105,17 @@ namespace HexaFall.Gameplay.Runtime
                 foreach (var hit in hits)
                 {
                     var box = hit.collider.GetComponentInParent<BoxController>();
-                    if (box != null && box.CanBeSelected)
+                    bool isValid = false;
+                    if (isTargeting && boosterManager.ActiveBooster != null)
+                    {
+                        isValid = boosterManager.ActiveBooster.IsValidTarget(box);
+                    }
+                    else if (box != null)
+                    {
+                        isValid = box.CanBeSelected;
+                    }
+                    
+                    if (box != null && isValid)
                     {
                         // Calculate distance from the ray to the center of the box
                         float distToRay = Vector3.Cross(ray.direction, box.transform.position - ray.origin).magnitude;
@@ -121,6 +134,11 @@ namespace HexaFall.Gameplay.Runtime
 
                 if (bestBox != null && gridBoardController != null)
                 {
+                    if (boosterManager != null && boosterManager.IsTargeting)
+                    {
+                        boosterManager.NotifyTargetSelected(bestBox);
+                        return;
+                    }
                     gridBoardController.TrySelectBox(bestBox.BoxId);
                 }
             }
@@ -157,15 +175,14 @@ namespace HexaFall.Gameplay.Runtime
         private IEnumerator MoveSelectedBoxToWaiting(BoxController box, IReadOnlyList<Vector3> path)
         {
             var waitingIndex = Mathf.Max(0, waitingArea.IndexOf(box.BoxId));
-            //yield return box.PlayMoveAlongGridPathThenJump(path, waitingArea.GetWorldSlotPosition(waitingIndex), BoxMoveDuration);
-            yield return box.PlayMoveAlongGridPathThenJump(path, waitingArea.GetWorldSlotPosition(waitingIndex), tuningConfig.boxMoveStepDuration, tuningConfig.boxMoveStepDuration);
+            var slotTrans = waitingArea.GetSlotTransform(waitingIndex);
+            
+            yield return box.PlayMoveAlongGridPathThenJump(path, slotTrans, tuningConfig.boxMoveStepDuration, tuningConfig.boxMoveStepDuration);
 
             var currentIndex = waitingArea.IndexOf(box.BoxId);
             if (currentIndex >= 0)
             {
-                box.transform.SetParent(waitingArea.GetSlotTransform(currentIndex), true);
                 box.transform.localScale = Vector3.one;
-                yield return box.PlaySlideToLocal(Vector3.zero, BoxClearDuration);
             }
 
             RequestCollection();
@@ -361,7 +378,7 @@ namespace HexaFall.Gameplay.Runtime
                 }
 
                 int maxI = 0;
-                float deltaDelay = 0.1f;
+                //float deltaDelay = 0.1f;
                 bool anyBlockSent = false;
 
                 foreach (var stack in stacks)
@@ -423,8 +440,8 @@ namespace HexaFall.Gameplay.Runtime
 
                         StartCoroutine(AnimateBlockToBox(stack, color, startPos, nearestBox, sourcePosition, events, currentDelay, topBlock));
                         
-                        float nextDelta = Mathf.Max(0.02f, deltaDelay - (i * 0.012f));
-                        currentDelay += nextDelta;
+                        //float nextDelta = Mathf.Max(0.02f, deltaDelay - (i * 0.012f));
+                        currentDelay += tuningConfig.delayEachBlockFill;
 
                         i++;
                         anyBlockSent = true;
@@ -442,7 +459,7 @@ namespace HexaFall.Gameplay.Runtime
                     {
                         if (!stack.HasBlocks && stackBoardController != null)
                         {
-                            yield return stackBoardController.FlowStacksToLowestPlaceholders(maxI * deltaDelay);
+                            yield return stackBoardController.FlowStacksToLowestPlaceholders(maxI * tuningConfig.delayEachBlockFill);
                             var revealed = stackBoardController.RevealHiddenStacksInCurrentRow();
                             if (revealed != null)
                             {
@@ -468,7 +485,7 @@ namespace HexaFall.Gameplay.Runtime
 
             yield return new WaitForSeconds(delay); 
 
-            yield return stack.PlayDetachedBlockFlight(color, startPos, box.CollectionWorldPosition, BlockFlyDuration, topBlock);
+            yield return stack.PlayDetachedBlockFlight(color, startPos, box.TargetBlockFly, BlockFlyDuration, topBlock);
 
             box.AddBlock();
             events.Add(new GameplayEvent(GameplayEventType.BlockCollected, box.BoxId, sourcePosition, color, box.FillCount));
@@ -521,9 +538,9 @@ namespace HexaFall.Gameplay.Runtime
             return stackBoardController == null ? null : stackBoardController.FindMatchingEligibleStack(targetColor);
         }
 
-        private List<StackController> FindAllMatchingStacks(ColorType targetColor)
+        private List<StackController> FindAllMatchingStacks(ColorType targetColor, bool lowestRowOnly = true)
         {
-            return stackBoardController == null ? new List<StackController>() : stackBoardController.FindAllMatchingEligibleStacks(targetColor);
+            return stackBoardController == null ? new List<StackController>() : stackBoardController.FindAllMatchingEligibleStacks(targetColor, lowestRowOnly);
         }
 
         private bool CanAnyWaitingBoxCollect()
@@ -589,7 +606,7 @@ namespace HexaFall.Gameplay.Runtime
             gridBoardController?.Build(CurrentLevelData.gridCellBoardData, CanGridSelectBox, OnGridBoxSelected);
             gridBoardController?.BuildM3Mechanics(CurrentLevelData);
             stackBoardController?.Build(CurrentLevelData.stackBoard);
-            waitingArea?.Build(CurrentLevelData.waitingSlots, WaitingWarningFreeSlots, tuningConfig.VisibleConveyorZone);
+            waitingArea?.Build(CurrentLevelData.waitingSlots, tuningConfig.MaximumWaitingSlots, WaitingWarningFreeSlots, tuningConfig.VisibleConveyorZone);
         }
 
         private void ApplyViews(IReadOnlyList<GameplayEvent> events)

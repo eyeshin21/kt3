@@ -19,6 +19,9 @@ namespace HexaFall.Gameplay.Runtime
         LockDestroyed = 11,
         TunnelReleased = 12,
         StackRevealed = 13,
+        BoosterUsed = 14,
+        SlotAdded = 15,
+        BoxShuffled = 16,
     }
 
     public sealed class GameplayEvent

@@ -33,6 +33,7 @@ namespace HexaFall.Gameplay.CoreController
         [SerializeField] private float m_maxFillPosY = 2.5f;
         [SerializeField] private float gridPathHopHeight = 0.2f;
         [SerializeField] private float slotJumpHeight = 1.2f;
+        [SerializeField] private float heightLiftUpByBooster = 1;
 
         [Header("VFXs")]
         [SerializeField] private ParticleSystem m_iceBreakVfx;
@@ -52,6 +53,20 @@ namespace HexaFall.Gameplay.CoreController
         private Tween flipTween;
         private Tween scaleTween;
 
+        public void SetBoosterHighlight(bool active)
+        {
+            scaleTween?.Kill();
+            var baseScale = initialLocalScale == Vector3.zero ? Vector3.one : initialLocalScale;
+            if (active)
+            {
+                scaleTween = transform.DOScale(baseScale * 1.05f, 0.4f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
+            }
+            else
+            {
+                scaleTween = transform.DOScale(baseScale, 0.2f).SetEase(Ease.OutQuad);
+            }
+        }
+
         public string BoxId { get; private set; }
         public ColorType TargetColor { get; private set; }
         public int Capacity { get; private set; }
@@ -63,6 +78,7 @@ namespace HexaFall.Gameplay.CoreController
         public bool IsCleared { get; set; }
         public bool IsFull => FillCount >= Capacity;
         public Vector3 CollectionWorldPosition => m_targetBlockFly.transform.position;
+        public Transform TargetBlockFly => m_targetBlockFly;
 
         public bool IsHidden         { get; private set; }
         public int  FrozenDurability { get; private set; }
@@ -193,7 +209,7 @@ namespace HexaFall.Gameplay.CoreController
             yield return seq.WaitForCompletion();
         }
 
-        public IEnumerator PlayMoveAlongGridPathThenJump(IReadOnlyList<Vector3> pathWorldPositions, Vector3 targetWorldPosition, float stepDuration, float jumToSlotDuration)
+        public IEnumerator PlayMoveAlongGridPathThenJump(IReadOnlyList<Vector3> pathWorldPositions, Transform targetSlot, float stepDuration, float jumToSlotDuration)
         {
             gameObject.SetActive(true);
 
@@ -209,7 +225,20 @@ namespace HexaFall.Gameplay.CoreController
                 }
             }
 
-            yield return PlayfulMoveArcToWorld(targetWorldPosition, jumpDuration, slotJumpHeight * 1.5f, false, true).WaitForCompletion();
+            transform.SetParent(targetSlot, true);
+            Sequence seq = DOTween.Sequence();
+            seq.Append(transform.DOLocalJump(Vector3.zero, slotJumpHeight * 1.5f, 1, jumpDuration).SetEase(Ease.InOutSine));
+            yield return seq.WaitForCompletion();
+            
+            var startScale = initialLocalScale == Vector3.zero ? Vector3.one : initialLocalScale;
+            var squashScale = new Vector3(startScale.x * 1.15f, startScale.y * 0.85f, startScale.z * 1.15f);
+            
+            scaleTween?.Kill();
+            Sequence bounceSeq = DOTween.Sequence();
+            bounceSeq.Append(transform.DOScale(squashScale, 0.1f).SetEase(Ease.OutQuad));
+            bounceSeq.Append(transform.DOScale(startScale, 0.15f).SetEase(Ease.OutBack));
+            scaleTween = bounceSeq;
+            
             MarkArrivedInWaitingArea();
         }
 
@@ -413,6 +442,50 @@ namespace HexaFall.Gameplay.CoreController
             flipTween = seq;
         }
 
+        public IEnumerator PlayBoosterActivation(float duration)
+        {
+            if (!IsPickable)
+            {
+                IsPickable = true;
+                PlayFlip(true);
+            }
+
+            Sequence seq = DOTween.Sequence();
+            
+            seq.Append(transform.DOLocalMoveY(transform.localPosition.y + heightLiftUpByBooster, duration * 0.5f + flipDuration).SetEase(Ease.OutQuad));
+            seq.Append(transform.DOLocalMoveY(transform.localPosition.y, duration * 0.5f).SetEase(Ease.InQuad));
+            
+            yield return new WaitForSeconds(duration);
+        }
+
+        public IEnumerator PlayShuffleAnticipation(float duration)
+        {
+            yield return transform.DOShakePosition(duration, strength: new Vector3(0.1f, 0f, 0.1f), vibrato: 20, randomness: 90).WaitForCompletion();
+        }
+
+        public IEnumerator PlayShuffleFlight(Vector3 targetWorldPos, float duration)
+        {
+            Sequence seq = DOTween.Sequence();
+            
+            seq.Join(transform.DOJump(targetWorldPos, jumpPower: 1.5f, numJumps: 1, duration).SetEase(Ease.InOutQuad));
+            seq.Join(transform.DORotate(new Vector3(0f, 360f, 0f), duration, RotateMode.FastBeyond360).SetEase(Ease.InOutQuad));
+            
+            yield return seq.WaitForCompletion();
+        }
+
+        public IEnumerator PlayShuffleLanding(float duration)
+        {
+            Sequence seq = DOTween.Sequence();
+            seq.Append(transform.DOScale(initialLocalScale * 1.2f, duration * 0.5f).SetEase(Ease.OutQuad));
+            seq.Append(transform.DOScale(initialLocalScale, duration * 0.5f).SetEase(Ease.InBounce));
+            yield return seq.WaitForCompletion();
+        }
+
+        public void SetGridPosition(GridPosition pos)
+        {
+            GridPosition = pos;
+        }
+
         private void ApplyMaterial(ColorType targetColor)
         {
             if (m_mesh == null || m_listMaterial == null) return;
@@ -429,5 +502,14 @@ namespace HexaFall.Gameplay.CoreController
             }
         }
 
+        /// <summary>Creates a BoxDefinition snapshot of the current runtime state. Used by ShuffleBooster.</summary>
+        public BoxDefinition SnapshotDefinition() => new BoxDefinition
+        {
+            boxId           = BoxId,
+            targetColor     = TargetColor,
+            capacity        = Capacity,
+            isHidden        = IsHidden,
+            frozenDurability = FrozenDurability,
+        };
     }
 }

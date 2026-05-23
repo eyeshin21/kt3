@@ -8,7 +8,7 @@ using Lean.Pool;
 
 namespace HexaFall.Gameplay.CoreController
 {
-    public sealed class GridBoardController : MonoBehaviour
+    public sealed partial class GridBoardController : MonoBehaviour
     {
         [SerializeField] private GridCellController cellPrefab;
         [SerializeField] private Transform cellRoot;
