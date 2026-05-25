@@ -64,12 +64,12 @@ MonoBehaviour:
     - position:
         row: 0
         column: 3
-      cellType: 1
+      cellType: 3
       box:
         boxId: box_0_2
         targetColor: 5
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -232,12 +232,12 @@ MonoBehaviour:
     - position:
         row: 1
         column: 6
-      cellType: 1
+      cellType: 3
       box:
         boxId: box_1_5
         targetColor: 8
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -302,12 +302,12 @@ MonoBehaviour:
     - position:
         row: 2
         column: 2
-      cellType: 1
+      cellType: 3
       box:
         boxId: box_2_1
         targetColor: 9
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -1180,7 +1180,7 @@ MonoBehaviour:
         row: 0
         column: 4
       blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 1
@@ -1192,13 +1192,13 @@ MonoBehaviour:
         row: 1
         column: 3
       blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 2
         column: 4
       blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 3
@@ -1216,7 +1216,7 @@ MonoBehaviour:
         row: 0
         column: 1
       blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 2
@@ -1246,7 +1246,7 @@ MonoBehaviour:
         row: 3
         column: 3
       blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 2
@@ -1264,7 +1264,7 @@ MonoBehaviour:
         row: 2
         column: 2
       blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 2
@@ -1306,7 +1306,7 @@ MonoBehaviour:
         row: 4
         column: 3
       blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 2
@@ -1318,7 +1318,7 @@ MonoBehaviour:
         row: 3
         column: 5
       blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 3
@@ -1348,7 +1348,7 @@ MonoBehaviour:
         row: 4
         column: 1
       blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 4
@@ -1360,7 +1360,7 @@ MonoBehaviour:
         row: 5
         column: 4
       blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 5
@@ -1372,7 +1372,7 @@ MonoBehaviour:
         row: 6
         column: 5
       blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 8
@@ -1384,13 +1384,13 @@ MonoBehaviour:
         row: 8
         column: 1
       blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 9
         column: 4
       blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 6
@@ -1462,7 +1462,7 @@ MonoBehaviour:
         row: 6
         column: 1
       blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 6
@@ -1528,7 +1528,7 @@ MonoBehaviour:
         row: 8
         column: 2
       blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 8
