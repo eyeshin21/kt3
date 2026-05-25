@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba12eb74e072f2e47ac0b37ede96d802, type: 3}
   m_Name: Level_17
   m_EditorClassIdentifier: 
-  level: 65
+  level: 17
   levelType: 0
   waitingSlots: 6
   gridCellBoardData:
