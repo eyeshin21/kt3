@@ -1180,7 +1180,7 @@ MonoBehaviour:
         row: 0
         column: 4
       blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 1
+      isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 1
@@ -1216,7 +1216,7 @@ MonoBehaviour:
         row: 0
         column: 1
       blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 1
+      isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 2
@@ -1282,13 +1282,13 @@ MonoBehaviour:
         row: 1
         column: 5
       blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 1
         column: 1
       blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
+      isHidden: 1
     - useExplicitPosition: 1
       position:
         row: 1

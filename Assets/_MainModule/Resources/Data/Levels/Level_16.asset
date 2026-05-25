@@ -442,12 +442,12 @@ MonoBehaviour:
     - position:
         row: 3
         column: 3
-      cellType: 4
+      cellType: 3
       box:
         boxId: box_3_1
         targetColor: 4
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 8
       pinId: 
       tunnelId: 
@@ -470,12 +470,12 @@ MonoBehaviour:
     - position:
         row: 3
         column: 5
-      cellType: 4
+      cellType: 3
       box:
         boxId: box_3_3
         targetColor: 4
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 8
       pinId: 
       tunnelId: 
@@ -554,12 +554,12 @@ MonoBehaviour:
     - position:
         row: 4
         column: 2
-      cellType: 4
+      cellType: 3
       box:
         boxId: box_4_0
         targetColor: 7
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 10
       pinId: 
       tunnelId: 
@@ -610,12 +610,12 @@ MonoBehaviour:
     - position:
         row: 4
         column: 6
-      cellType: 4
+      cellType: 3
       box:
         boxId: box_4_4
         targetColor: 7
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 10
       pinId: 
       tunnelId: 

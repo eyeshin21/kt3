@@ -712,7 +712,7 @@ MonoBehaviour:
         row: 0
         column: 2
       blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 1
+      isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 0
