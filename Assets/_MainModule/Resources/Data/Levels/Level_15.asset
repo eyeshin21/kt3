@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 15
   levelType: 0
-  waitingSlots: 6
+  waitingSlots: 5
   gridCellBoardData:
     width: 9
     height: 8

@@ -72,6 +72,7 @@ namespace HexaFall.Gameplay.Runtime
             BindViews();
             boosterManager?.InitializeBoosters(this, gridBoardController, waitingArea);
             ApplyViews(new List<GameplayEvent>());
+            gridBoardController?.EvaluateFrozenLockStates();
         }
 
         public void RetryLevel()
@@ -169,6 +170,11 @@ namespace HexaFall.Gameplay.Runtime
             waitingArea.ApplyState();
             PlayFeedback(GameplayEventType.BoxSelected);
 
+            if (gridBoardController != null)
+            {
+                waitingArea.SetFastMode(gridBoardController.AreAllBoxesPicked());
+            }
+
             StartCoroutine(MoveSelectedBoxToWaiting(box, path));
         }
 
@@ -260,6 +266,8 @@ namespace HexaFall.Gameplay.Runtime
                 for (int i = 0; i < count; i++)
                 {
                     var pos = emptiedCells.Dequeue();
+
+                    gridBoardController.UnlockAdjacentFrozenBoxes(pos);
 
                     var revealed = gridBoardController.RevealAdjacentHiddenBoxes(pos);
                     foreach (var b in revealed)

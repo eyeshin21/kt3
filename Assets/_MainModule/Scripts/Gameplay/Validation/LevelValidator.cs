@@ -35,7 +35,7 @@ namespace HexaFall.Gameplay.Validation
             var boxColorCounts = new Dictionary<ColorType, int>();
             foreach (var cell in level.gridCellBoardData.gridCells)
             {
-                if (cell != null && cell.cellType != GridCellType.Empty && cell.cellType != GridCellType.DeadCell && cell.box != null)
+                if (cell != null && (cell.cellType == GridCellType.StandardBox || cell.cellType == GridCellType.MysteryBox || cell.cellType == GridCellType.FrozenBox) && cell.box != null)
                 {
                     if (cell.box.targetColor != ColorType.None)
                     {

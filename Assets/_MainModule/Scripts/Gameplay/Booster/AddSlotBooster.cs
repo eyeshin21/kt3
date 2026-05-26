@@ -39,11 +39,19 @@ namespace HexaFall.Gameplay.Booster
             FireDeactivated();
         }
 
+        private Transform sourceTransform;
+
+        public void SetSourceTransform(Transform sourceTransform)
+        {
+            this.sourceTransform = sourceTransform;
+        }
+
         public override IEnumerator Execute(BoxController target = null)
         {
             if (waitingArea.IsAtMaxCapacity) yield break;
 
-            waitingArea.AddSlot();
+            yield return waitingArea.PlayAddSlotAnimation(sourceTransform);
+
             waitingArea.ApplyState();
             ConsumeOne();
         }

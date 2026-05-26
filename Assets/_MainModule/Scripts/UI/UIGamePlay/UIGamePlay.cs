@@ -107,7 +107,7 @@ public class UIGamePlay : PanelBase
 
     private void OnClickAddSlot()
     {
-        GameController.Instance.BoosterManager.TryActivate(HexaFall.Gameplay.Booster.BoosterType.AddSlot);
+        GameController.Instance.BoosterManager.TryActivate(HexaFall.Gameplay.Booster.BoosterType.AddSlot, m_buttonAddSlot.transform);
         UpdateUI();
     }
 

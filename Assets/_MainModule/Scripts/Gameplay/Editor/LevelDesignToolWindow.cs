@@ -23,6 +23,66 @@ namespace HexaFall.Gameplay.Editor
         private Vector2 scrollPos;
         private LevelValidator validator = new LevelValidator();
 
+        private string[] availableLevelPaths = new string[0];
+        private string[] availableLevelNames = new string[0];
+        private int selectedLevelIndex = -1;
+
+        private void OnEnable()
+        {
+            RefreshLevelList();
+        }
+
+        private void OnFocus()
+        {
+            RefreshLevelList();
+        }
+
+        private void RefreshLevelList()
+        {
+            string[] guids = AssetDatabase.FindAssets("t:LevelData");
+            
+            System.Array.Sort(guids, (a, b) => 
+            {
+                string nameA = System.IO.Path.GetFileNameWithoutExtension(AssetDatabase.GUIDToAssetPath(a));
+                string nameB = System.IO.Path.GetFileNameWithoutExtension(AssetDatabase.GUIDToAssetPath(b));
+                
+                int numA = ExtractNumber(nameA);
+                int numB = ExtractNumber(nameB);
+                if (numA != -1 && numB != -1) return numA.CompareTo(numB);
+                return nameA.CompareTo(nameB);
+            });
+
+            availableLevelPaths = new string[guids.Length];
+            availableLevelNames = new string[guids.Length];
+            for (int i = 0; i < guids.Length; i++)
+            {
+                availableLevelPaths[i] = AssetDatabase.GUIDToAssetPath(guids[i]);
+                availableLevelNames[i] = System.IO.Path.GetFileNameWithoutExtension(availableLevelPaths[i]);
+            }
+
+            if (currentLevel != null)
+            {
+                string currentPath = AssetDatabase.GetAssetPath(currentLevel);
+                selectedLevelIndex = System.Array.IndexOf(availableLevelPaths, currentPath);
+            }
+            else if (guids.Length > 0)
+            {
+                selectedLevelIndex = 0;
+                currentLevel = AssetDatabase.LoadAssetAtPath<LevelData>(availableLevelPaths[0]);
+            }
+            else
+            {
+                selectedLevelIndex = -1;
+            }
+        }
+
+        private static int ExtractNumber(string name)
+        {
+            var match = System.Text.RegularExpressions.Regex.Match(name, @"\d+");
+            if (match.Success) return int.Parse(match.Value);
+            return -1;
+        }
+
         private static Texture2D whiteTexture;
         public static Texture2D WhiteTexture
         {
@@ -105,8 +165,29 @@ namespace HexaFall.Gameplay.Editor
         {
             GUILayout.Label("Level Management", EditorStyles.boldLabel);
             EditorGUILayout.BeginHorizontal();
-            currentLevel = (LevelData)EditorGUILayout.ObjectField("Level Data", currentLevel, typeof(LevelData), false);
             
+            if (availableLevelNames != null && availableLevelNames.Length > 0)
+            {
+                int newIndex = EditorGUILayout.Popup(selectedLevelIndex, availableLevelNames);
+                if (newIndex != selectedLevelIndex || currentLevel == null)
+                {
+                    selectedLevelIndex = newIndex;
+                    if (selectedLevelIndex >= 0 && selectedLevelIndex < availableLevelPaths.Length)
+                    {
+                        currentLevel = AssetDatabase.LoadAssetAtPath<LevelData>(availableLevelPaths[selectedLevelIndex]);
+                    }
+                }
+            }
+            else
+            {
+                GUILayout.Label("No Levels Found", GUILayout.Width(150));
+            }
+            
+            if (GUILayout.Button("Refresh", GUILayout.Width(60)))
+            {
+                RefreshLevelList();
+            }
+
             if (GUILayout.Button("Create New Level", GUILayout.Width(120)))
             {
                 CreateNewLevel();
@@ -143,6 +224,8 @@ namespace HexaFall.Gameplay.Editor
 
             // Load it back to let Unity initialize the [Serializable] classes
             currentLevel = AssetDatabase.LoadAssetAtPath<LevelData>(path);
+            
+            RefreshLevelList();
 
             currentLevel.gridCellBoardData.width = 10;
             currentLevel.gridCellBoardData.height = 10;
@@ -589,6 +672,12 @@ namespace HexaFall.Gameplay.Editor
                         }
                     }
                 }
+            }
+
+            if (cell.box != null)
+            {
+                if (oldType == GridCellType.MysteryBox) cell.box.isHidden = false;
+                if (oldType == GridCellType.FrozenBox) cell.box.frozenDurability = 0;
             }
         }
 
@@ -1173,6 +1262,15 @@ namespace HexaFall.Gameplay.Editor
                         if (cell.cellType == GridCellType.FrozenBox && cell.box.frozenDurability < 1)
                         {
                             cell.box.frozenDurability = 1; changed = true;
+                        }
+
+                        if (cell.cellType != GridCellType.MysteryBox && cell.box.isHidden)
+                        {
+                            cell.box.isHidden = false; changed = true;
+                        }
+                        if (cell.cellType != GridCellType.FrozenBox && cell.box.frozenDurability > 0)
+                        {
+                            cell.box.frozenDurability = 0; changed = true;
                         }
                     }
                 }

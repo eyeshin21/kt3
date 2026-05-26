@@ -18,7 +18,8 @@ namespace HexaFall.Gameplay.CoreController
         [SerializeField] private Material m_materialConveyorTranslate;
         [SerializeField] private float m_conveyorTextureScrollSpeed = 0.05f;
 
-        [SerializeField] private float slotSpacing = 1f;
+        //[SerializeField] private float slotSpacing = 1f;
+        [SerializeField] private float conveyorLength = 7.8f;
         [SerializeField] private float conveyorSpeed = 1f;
 
         private readonly List<string> waitingBoxIds = new List<string>();
@@ -27,6 +28,7 @@ namespace HexaFall.Gameplay.CoreController
         private int capacity;
         private int warningFreeSlots;
         private Vector2 visibleConveyorZone = new Vector2(0.2f, 0.8f);
+        private float fastModeMultiplier = 1f;
 
         public IReadOnlyList<string> WaitingBoxIds => waitingBoxIds;
         public int Capacity => capacity;
@@ -34,14 +36,18 @@ namespace HexaFall.Gameplay.CoreController
         public bool IsFull => !HasFreeSlot;
         public int FreeSlots => waitingBoxIds.Count(id => string.IsNullOrEmpty(id));
 
+        private float displayedCapacity = 0f;
+
         public void Build(int waitingCapacity, int warningThreshold, Vector2 visibleZone)
         {
             capacity = waitingCapacity;
+            displayedCapacity = capacity;
             warningFreeSlots = Mathf.Max(0, warningThreshold);
             waitingBoxIds.Clear();
             for (int i = 0; i < capacity; i++) waitingBoxIds.Add(null);
             currentConveyorOffset = 0f;
             visibleConveyorZone = visibleZone;
+            fastModeMultiplier = 1f;
             ClearChildren();
             RebuildSlots();
             m_textSlotOccupied.text = $"{Capacity - FreeSlots}/{Capacity}";
@@ -50,6 +56,11 @@ namespace HexaFall.Gameplay.CoreController
             {
                 m_materialConveyorTranslate.SetTextureOffset("_BaseMap", new Vector2(0, 0));
             }
+        }
+
+        public void SetFastMode(bool isFast)
+        {
+            fastModeMultiplier = isFast ? 3f : 1f;
         }
 
         public void ApplyState()
@@ -116,10 +127,11 @@ namespace HexaFall.Gameplay.CoreController
             int index = waitingBoxIds.IndexOf(boxId);
             if (index < 0 || index >= slots.Count) return false;
             
-            float totalWidth = capacity * slotSpacing;
+            float totalWidth = conveyorLength;
             if (totalWidth <= 0f) return true;
 
-            float startX = -((capacity - 1) * slotSpacing * 0.5f) - slotSpacing * 0.5f;
+            //float startX = -((capacity - 1) * slotSpacing * 0.5f) - slotSpacing * 0.5f;
+            float startX = -conveyorLength * 0.5f;
             float localX = slots[index].transform.localPosition.x;
             
             float ratio = (localX - startX) / totalWidth;
@@ -198,9 +210,13 @@ namespace HexaFall.Gameplay.CoreController
         {
             if (capacity <= 0 || slots.Count == 0) return;
 
-            currentConveyorOffset += conveyorSpeed * Time.deltaTime;
+            float currentConveyorSpeed = conveyorSpeed * fastModeMultiplier;
+            float currentTextureSpeed = m_conveyorTextureScrollSpeed * fastModeMultiplier;
+
+            currentConveyorOffset += currentConveyorSpeed * Time.deltaTime;
             
-            float totalWidth = (capacity + 0.5f) * (slotSpacing);
+            //float totalWidth = (capacity + 0.5f) * (slotSpacing);
+            float totalWidth = conveyorLength;
             if (totalWidth > 0f)
             {
                 currentConveyorOffset %= totalWidth;
@@ -208,7 +224,7 @@ namespace HexaFall.Gameplay.CoreController
             
             if (m_materialConveyorTranslate != null)
             {
-                m_materialConveyorTranslate.SetTextureOffset("_BaseMap", new Vector2(0, m_materialConveyorTranslate.GetTextureOffset("_BaseMap").y - m_conveyorTextureScrollSpeed));
+                m_materialConveyorTranslate.SetTextureOffset("_BaseMap", new Vector2(0, m_materialConveyorTranslate.GetTextureOffset("_BaseMap").y - currentTextureSpeed));
             }
 
             UpdateSlotPositions();
@@ -216,8 +232,10 @@ namespace HexaFall.Gameplay.CoreController
 
         private void UpdateSlotPositions()
         {
-            float totalWidth = (capacity + 0.5f) * slotSpacing;
-            float startX = -((capacity - 1) * slotSpacing * 0.5f) - slotSpacing * 0.75f;
+            float currentCap = Mathf.Max(1f, displayedCapacity);
+            float slotSpacing = conveyorLength / currentCap;
+            float totalWidth = conveyorLength;
+            float startX = -conveyorLength * 0.5f;
 
             for (int i = 0; i < slots.Count; i++)
             {
@@ -285,6 +303,7 @@ namespace HexaFall.Gameplay.CoreController
 
         private Vector3 GetSlotPosition(int index, int slotCapacity)
         {
+            float slotSpacing = conveyorLength / Mathf.Max(1, capacity);
             var centeredIndex = index - (slotCapacity - 1) * 0.5f;
             return new Vector3(centeredIndex * slotSpacing, 0f, 0f);
         }

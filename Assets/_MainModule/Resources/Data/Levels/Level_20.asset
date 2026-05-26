@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 20
   levelType: 0
-  waitingSlots: 6
+  waitingSlots: 5
   gridCellBoardData:
     width: 9
     height: 9
@@ -714,7 +714,7 @@ MonoBehaviour:
         targetColor: 9
         capacity: 24
         isHidden: 0
-        frozenDurability: 20
+        frozenDurability: 0
       pinId: 
       tunnelId: 
       keyId: 

@@ -74,11 +74,7 @@ namespace HexaFall.Gameplay.CoreController
             var definition = contentQueue.Dequeue();
             m_textQuantity.text = HasContent ? contentQueue.Count.ToString() : string.Empty;
 
-            if (!HasContent)
-            {
-                IsRemoved = true;
-                gameObject.SetActive(false);
-            }
+            // Tunnel no longer destroys itself automatically when empty
 
             var parent = cellParent != null ? cellParent : transform;
             var newBox  = LeanPool.Spawn(boxPrefab, parent);

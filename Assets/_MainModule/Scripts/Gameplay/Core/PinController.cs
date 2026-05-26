@@ -39,7 +39,7 @@ namespace HexaFall.Gameplay.CoreController
             TriggerNeighborPosition = StepFrom(HeadPosition, InverseOf(Direction), 1);
             
             if (m_body != null)
-                m_body.transform.localScale = new Vector3(Length/4f, 1, 1);
+                m_body.transform.localScale = new Vector3(1, 1, Length -1);
 
             float angle = 0f;
             switch (Direction)
@@ -76,7 +76,7 @@ namespace HexaFall.Gameplay.CoreController
                 if (m_head != null)
                 {
                     // Rotate head while body shrinks
-                    seq.Insert(0, m_head.transform.DOLocalRotate(new Vector3(360, 0, 0), duration * 0.6f, RotateMode.LocalAxisAdd).SetEase(Ease.InBack));
+                    seq.Insert(0, m_head.transform.DOLocalRotate(new Vector3(0, 0, 360), duration * 0.6f, RotateMode.LocalAxisAdd).SetEase(Ease.InBack));
                     
                     // Head scales down after body shrinks
                     seq.Insert(duration * 0.6f, m_head.transform.DOScale(Vector3.zero, duration * 0.4f).SetEase(Ease.InBack));

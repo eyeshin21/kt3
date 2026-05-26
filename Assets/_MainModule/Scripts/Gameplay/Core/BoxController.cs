@@ -82,6 +82,7 @@ namespace HexaFall.Gameplay.CoreController
 
         public bool IsHidden         { get; private set; }
         public int  FrozenDurability { get; private set; }
+        public bool IsFrozenLocked   { get; set; }
 
         private void Awake()
         {
@@ -103,6 +104,7 @@ namespace HexaFall.Gameplay.CoreController
             lastKnownPickable = false;
             IsHidden = definition.isHidden;
             FrozenDurability = definition.frozenDurability;
+            IsFrozenLocked = FrozenDurability > 0;
             this.onTapped = onTapped;
             transform.localScale = initialLocalScale == Vector3.zero ? Vector3.one : initialLocalScale;
             transform.localRotation = initialLocalRotation;

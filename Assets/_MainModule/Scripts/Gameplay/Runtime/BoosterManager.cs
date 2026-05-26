@@ -43,7 +43,7 @@ namespace HexaFall.Gameplay.Runtime
             }
         }
 
-        public void TryActivate(HexaFall.Gameplay.Booster.BoosterType type)
+        public void TryActivate(HexaFall.Gameplay.Booster.BoosterType type, Transform sourceTransform = null)
         {
             var booster = GetBooster(type);
 
@@ -63,6 +63,9 @@ namespace HexaFall.Gameplay.Runtime
             }
             else
             {
+                if (booster is AddSlotBooster addSlot) {
+                    addSlot.SetSourceTransform(sourceTransform);
+                }
                 // Instant boosters execute immediately without entering targeting state
                 booster.Activate();
             }

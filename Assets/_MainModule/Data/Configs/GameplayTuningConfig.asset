@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GameplayTuningConfig
   m_EditorClassIdentifier: 
   minimumWaitingSlots: 3
-  maximumWaitingSlots: 8
+  maximumWaitingSlots: 6
   defaultBoxCapacity: 6
   maximumBoxCapacity: 100
   maximumStackBlocks: 6

@@ -180,6 +180,12 @@ namespace HexaFall.Gameplay.CoreController
             return true;
         }
 
+        public bool AreAllBoxesPicked()
+        {
+            if (Boxes.Count == 0) return false;
+            return Boxes.All(box => box.IsCleared || box.IsInWaitingArea);
+        }
+
         public IReadOnlyList<Vector3> FindPathToTopExit(BoxController box)
         {
             if (box == null || boardData == null)
@@ -483,10 +489,48 @@ namespace HexaFall.Gameplay.CoreController
             {
                 if (box.IsCleared || box.IsInWaitingArea) continue;
                 if (box.FrozenDurability <= 0) continue;
+                if (box.IsFrozenLocked) continue;
                 if (box.ReduceFrozen()) // returns true when just reached 0
                     thawed.Add(box);
             }
             return thawed;
+        }
+
+        public void UnlockAdjacentFrozenBoxes(GridPosition vacatedPosition)
+        {
+            foreach (var box in Boxes)
+            {
+                if (box.IsCleared || box.IsInWaitingArea) continue;
+                if (box.FrozenDurability <= 0 || !box.IsFrozenLocked) continue;
+                
+                if (IsOrthogonalAdjacent(box.GridPosition, vacatedPosition))
+                {
+                    box.IsFrozenLocked = false;
+                }
+            }
+        }
+
+        public void EvaluateFrozenLockStates()
+        {
+            foreach (var box in Boxes)
+            {
+                if (box.IsCleared || box.IsInWaitingArea || box.FrozenDurability <= 0) continue;
+                
+                bool adjacentEmpty = false;
+                foreach (var neighbor in GetNeighbors(box.GridPosition))
+                {
+                    if (IsCellEffectivelyEmpty(neighbor))
+                    {
+                        adjacentEmpty = true;
+                        break;
+                    }
+                }
+
+                if (adjacentEmpty)
+                {
+                    box.IsFrozenLocked = false;
+                }
+            }
         }
 
         public List<BoxController> RevealAdjacentHiddenBoxes(GridPosition vacatedPosition)
