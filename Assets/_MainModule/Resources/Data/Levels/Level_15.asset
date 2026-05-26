@@ -17,7 +17,7 @@ MonoBehaviour:
   waitingSlots: 5
   gridCellBoardData:
     width: 9
-    height: 8
+    height: 7
     gridCells:
     - position:
         row: 0
@@ -36,9 +36,9 @@ MonoBehaviour:
     - position:
         row: 0
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_0_3
+        boxId: box_0_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -120,9 +120,9 @@ MonoBehaviour:
     - position:
         row: 0
         column: 7
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_0_9
+        boxId: box_0_7
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -162,9 +162,9 @@ MonoBehaviour:
     - position:
         row: 1
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_1_3
+        boxId: box_1_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -246,9 +246,9 @@ MonoBehaviour:
     - position:
         row: 1
         column: 7
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_1_9
+        boxId: box_1_7
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -288,9 +288,9 @@ MonoBehaviour:
     - position:
         row: 2
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_2_3
+        boxId: box_2_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -372,9 +372,9 @@ MonoBehaviour:
     - position:
         row: 2
         column: 7
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_2_9
+        boxId: box_2_7
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -414,9 +414,9 @@ MonoBehaviour:
     - position:
         row: 3
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_3_3
+        boxId: box_3_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -498,9 +498,9 @@ MonoBehaviour:
     - position:
         row: 3
         column: 7
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_3_9
+        boxId: box_3_7
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -540,9 +540,9 @@ MonoBehaviour:
     - position:
         row: 4
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_4_3
+        boxId: box_4_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -624,9 +624,9 @@ MonoBehaviour:
     - position:
         row: 4
         column: 7
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_4_9
+        boxId: box_4_7
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -666,7 +666,49 @@ MonoBehaviour:
     - position:
         row: 5
         column: 1
-      cellType: 0
+      cellType: 2
+      box:
+        boxId: box_5_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_5_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_5_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 4
+      cellType: 2
       box:
         boxId: box_5_3
         targetColor: 0
@@ -679,8 +721,8 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 5
-        column: 2
-      cellType: 0
+        column: 5
+      cellType: 2
       box:
         boxId: box_5_4
         targetColor: 0
@@ -693,8 +735,8 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 5
-        column: 3
-      cellType: 0
+        column: 6
+      cellType: 2
       box:
         boxId: box_5_5
         targetColor: 0
@@ -707,52 +749,10 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 5
-        column: 4
-      cellType: 0
+        column: 7
+      cellType: 2
       box:
         boxId: box_5_6
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 5
-        column: 5
-      cellType: 0
-      box:
-        boxId: box_5_7
-        targetColor: 4
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 5
-        column: 6
-      cellType: 0
-      box:
-        boxId: box_5_8
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 5
-        column: 7
-      cellType: 0
-      box:
-        boxId: box_5_9
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
         column: 1
       cellType: 2
       box:
-        boxId: box_6_3
+        boxId: box_6_0
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -806,6 +806,48 @@ MonoBehaviour:
     - position:
         row: 6
         column: 2
+      cellType: 2
+      box:
+        boxId: box_6_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_6_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_6_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 5
       cellType: 2
       box:
         boxId: box_6_4
@@ -819,7 +861,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 6
-        column: 3
+        column: 6
       cellType: 2
       box:
         boxId: box_6_5
@@ -833,7 +875,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 6
-        column: 4
+        column: 7
       cellType: 2
       box:
         boxId: box_6_6
@@ -847,178 +889,10 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 6
-        column: 5
-      cellType: 2
-      box:
-        boxId: box_6_7
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 6
-        column: 6
-      cellType: 2
-      box:
-        boxId: box_6_8
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 6
-        column: 7
-      cellType: 2
-      box:
-        boxId: box_6_9
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 6
         column: 8
       cellType: 2
       box:
         boxId: box_6_8
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 0
-      cellType: 2
-      box:
-        boxId: box_7_0
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 1
-      cellType: 2
-      box:
-        boxId: box_7_3
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 2
-      cellType: 2
-      box:
-        boxId: box_7_4
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 3
-      cellType: 2
-      box:
-        boxId: box_7_5
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 4
-      cellType: 2
-      box:
-        boxId: box_7_6
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 5
-      cellType: 2
-      box:
-        boxId: box_7_7
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 6
-      cellType: 2
-      box:
-        boxId: box_7_8
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 7
-      cellType: 2
-      box:
-        boxId: box_7_9
-        targetColor: 0
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 7
-        column: 8
-      cellType: 2
-      box:
-        boxId: box_7_8
         targetColor: 0
         capacity: 24
         isHidden: 0

@@ -2483,13 +2483,13 @@ MonoBehaviour:
       position:
         row: 16
         column: 3
-      blocksBottomToTop: 090000000900000009000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 16
         column: 4
-      blocksBottomToTop: 0900000009000000090000000b0000000b0000000b000000
+      blocksBottomToTop: 0b0000000b0000000b0000000b0000000b0000000b000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
@@ -2501,7 +2501,7 @@ MonoBehaviour:
       position:
         row: 16
         column: 6
-      blocksBottomToTop: 0b0000000b0000000b000000090000000900000009000000
+      blocksBottomToTop: 090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:

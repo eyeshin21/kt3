@@ -641,7 +641,7 @@ MonoBehaviour:
       cellType: 2
       box:
         boxId: box_3_1
-        targetColor: 0
+        targetColor: 8
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -2516,7 +2516,7 @@ MonoBehaviour:
     position:
       row: 3
       column: 6
-    direction: 1
+    direction: 2
     contents:
     - boxId: tunnel_3_6_box_0
       targetColor: 8

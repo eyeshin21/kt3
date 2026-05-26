@@ -806,7 +806,7 @@ MonoBehaviour:
     - position:
         row: 6
         column: 2
-      cellType: 0
+      cellType: 2
       box:
         boxId: box_3_0
         targetColor: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
     - position:
         row: 6
         column: 6
-      cellType: 0
+      cellType: 2
       box:
         boxId: box_3_6
         targetColor: 13
