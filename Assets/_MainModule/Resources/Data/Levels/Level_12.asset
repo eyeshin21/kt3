@@ -833,7 +833,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 4
-        column: 6
+        column: 7
       cellType: 3
       box:
         boxId: box_4_2
@@ -847,7 +847,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 4
-        column: 7
+        column: 6
       cellType: 2
       box:
         boxId: box_4_3

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 16
   levelType: 0
-  waitingSlots: 5
+  waitingSlots: 6
   gridCellBoardData:
     width: 9
     height: 10
@@ -62,8 +62,8 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 0
-        column: 3
+        row: 2
+        column: 4
       cellType: 1
       box:
         boxId: box_0_1
@@ -76,7 +76,7 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 0
+        row: 1
         column: 4
       cellType: 1
       box:
@@ -90,7 +90,7 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 0
+        row: 1
         column: 5
       cellType: 1
       box:
@@ -202,7 +202,7 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 1
+        row: 0
         column: 4
       cellType: 1
       box:
@@ -216,7 +216,7 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 1
+        row: 0
         column: 5
       cellType: 3
       box:
@@ -273,7 +273,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 2
-        column: 0
+        column: 1
       cellType: 2
       box:
         boxId: box_2_1
@@ -287,7 +287,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 2
-        column: 1
+        column: 3
       cellType: 2
       box:
         boxId: box_2_2
@@ -314,12 +314,12 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 2
+        row: 3
         column: 3
-      cellType: 2
+      cellType: 1
       box:
         boxId: box_2_1
-        targetColor: 0
+        targetColor: 4
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 2
-        column: 4
+        row: 0
+        column: 3
       cellType: 1
       box:
         boxId: box_2_2
@@ -342,12 +342,12 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 2
+        row: 3
         column: 5
-      cellType: 2
+      cellType: 1
       box:
         boxId: box_2_3
-        targetColor: 0
+        targetColor: 4
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 2
-        column: 7
+        column: 5
       cellType: 2
       box:
         boxId: box_2_8
@@ -385,7 +385,7 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 2
-        column: 8
+        column: 7
       cellType: 2
       box:
         boxId: box_2_9
@@ -440,14 +440,14 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 3
-        column: 3
-      cellType: 3
+        row: 2
+        column: 0
+      cellType: 2
       box:
         boxId: box_3_1
         targetColor: 4
         capacity: 24
-        isHidden: 1
+        isHidden: 0
         frozenDurability: 8
       pinId: 
       tunnelId: 
@@ -468,14 +468,14 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 3
-        column: 5
-      cellType: 3
+        row: 2
+        column: 8
+      cellType: 2
       box:
         boxId: box_3_3
         targetColor: 4
         capacity: 24
-        isHidden: 1
+        isHidden: 0
         frozenDurability: 8
       pinId: 
       tunnelId: 
