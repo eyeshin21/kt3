@@ -39,7 +39,7 @@ MonoBehaviour:
       cellType: 1
       box:
         boxId: box_0_0
-        targetColor: 8
+        targetColor: 1
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -316,12 +316,12 @@ MonoBehaviour:
     - position:
         row: 2
         column: 3
-      cellType: 3
+      cellType: 2
       box:
         boxId: box_2_2
         targetColor: 8
         capacity: 24
-        isHidden: 1
+        isHidden: 0
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -330,10 +330,10 @@ MonoBehaviour:
     - position:
         row: 2
         column: 4
-      cellType: 0
+      cellType: 1
       box:
         boxId: box_2_3
-        targetColor: 0
+        targetColor: 9
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
     - position:
         row: 2
         column: 5
-      cellType: 1
+      cellType: 2
       box:
         boxId: box_2_4
         targetColor: 9
@@ -358,7 +358,7 @@ MonoBehaviour:
     - position:
         row: 2
         column: 6
-      cellType: 1
+      cellType: 7
       box:
         boxId: box_2_5
         targetColor: 1
@@ -366,7 +366,7 @@ MonoBehaviour:
         isHidden: 0
         frozenDurability: 0
       pinId: 
-      tunnelId: 
+      tunnelId: tunnel_2_6
       keyId: 
       lockId: 
     - position:
@@ -442,12 +442,12 @@ MonoBehaviour:
     - position:
         row: 3
         column: 3
-      cellType: 1
+      cellType: 3
       box:
         boxId: box_4_3
         targetColor: 13
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -456,10 +456,10 @@ MonoBehaviour:
     - position:
         row: 3
         column: 4
-      cellType: 0
+      cellType: 1
       box:
         boxId: box_3_3
-        targetColor: 0
+        targetColor: 7
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -484,15 +484,15 @@ MonoBehaviour:
     - position:
         row: 3
         column: 6
-      cellType: 7
+      cellType: 1
       box:
         boxId: box_3_5
-        targetColor: 0
+        targetColor: 1
         capacity: 24
         isHidden: 0
         frozenDurability: 0
       pinId: 
-      tunnelId: tunnel_3_5
+      tunnelId: 
       keyId: 
       lockId: 
     - position:
@@ -1731,48 +1731,48 @@ MonoBehaviour:
     direction: 0
     contents:
     - boxId: tunnel_2_2_box_0
-      targetColor: 9
+      targetColor: 1
       capacity: 24
       isHidden: 0
       frozenDurability: 0
     - boxId: tunnel_2_2_box_1
-      targetColor: 1
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_2_2_box_2
       targetColor: 9
       capacity: 24
       isHidden: 0
       frozenDurability: 0
-    - boxId: tunnel_2_2_box_3
+    - boxId: tunnel_2_2_box_2
       targetColor: 7
       capacity: 24
       isHidden: 0
       frozenDurability: 0
-  - tunnelId: tunnel_3_5
+    - boxId: tunnel_2_2_box_3
+      targetColor: 8
+      capacity: 24
+      isHidden: 0
+      frozenDurability: 0
+    - boxId: tunnel_2_2_box_4
+      targetColor: 9
+      capacity: 24
+      isHidden: 0
+      frozenDurability: 0
+  - tunnelId: tunnel_2_6
     position:
-      row: 3
+      row: 2
       column: 6
     direction: 1
     contents:
-    - boxId: tunnel_3_6_box_0
+    - boxId: tunnel_2_6_box_0
+      targetColor: 8
+      capacity: 24
+      isHidden: 0
+      frozenDurability: 0
+    - boxId: tunnel_2_6_box_1
+      targetColor: 7
+      capacity: 24
+      isHidden: 0
+      frozenDurability: 0
+    - boxId: tunnel_2_6_box_2
       targetColor: 13
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_3_6_box_1
-      targetColor: 7
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_3_6_box_2
-      targetColor: 7
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_3_6_box_3
-      targetColor: 1
       capacity: 24
       isHidden: 0
       frozenDurability: 0
