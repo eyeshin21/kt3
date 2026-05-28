@@ -456,7 +456,7 @@ MonoBehaviour:
     - position:
         row: 3
         column: 3
-      cellType: 9
+      cellType: 0
       box:
         boxId: box_4_4
         targetColor: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
     - position:
         row: 3
         column: 4
-      cellType: 9
+      cellType: 2
       box:
         boxId: box_4_5
         targetColor: 0
