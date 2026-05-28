@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 49
   levelType: 0
-  waitingSlots: 6
+  waitingSlots: 5
   gridCellBoardData:
-    width: 8
-    height: 6
+    width: 15
+    height: 15
     gridCells:
     - position:
         row: 0
@@ -36,38 +36,38 @@ MonoBehaviour:
     - position:
         row: 0
         column: 1
-      cellType: 1
-      box:
-        boxId: box_0_0
-        targetColor: 1
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 2
-        column: 3
-      cellType: 7
+      cellType: 2
       box:
         boxId: box_0_1
-        targetColor: 1
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
       pinId: 
-      tunnelId: tunnel_0_2
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_0_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
       keyId: 
       lockId: 
     - position:
         row: 0
         column: 3
-      cellType: 1
+      cellType: 2
       box:
-        boxId: box_0_2
-        targetColor: 3
+        boxId: box_0_3
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -78,10 +78,10 @@ MonoBehaviour:
     - position:
         row: 0
         column: 4
-      cellType: 1
+      cellType: 2
       box:
-        boxId: box_0_3
-        targetColor: 2
+        boxId: box_0_2
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -90,26 +90,26 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 1
-        column: 4
-      cellType: 7
+        row: 0
+        column: 5
+      cellType: 0
       box:
-        boxId: box_0_4
-        targetColor: 1
+        boxId: box_1_4
+        targetColor: 7
         capacity: 24
         isHidden: 0
         frozenDurability: 0
       pinId: 
-      tunnelId: tunnel_0_5
+      tunnelId: 
       keyId: 
       lockId: 
     - position:
         row: 0
         column: 6
-      cellType: 1
+      cellType: 0
       box:
-        boxId: box_0_5
-        targetColor: 1
+        boxId: box_0_4
+        targetColor: 4
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -120,9 +120,107 @@ MonoBehaviour:
     - position:
         row: 0
         column: 7
+      cellType: 1
+      box:
+        boxId: box_0_5
+        targetColor: 8
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 8
+      cellType: 0
+      box:
+        boxId: box_0_6
+        targetColor: 4
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 9
+      cellType: 0
+      box:
+        boxId: box_1_6
+        targetColor: 7
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 10
       cellType: 2
       box:
-        boxId: box_0_7
+        boxId: box_0_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_0_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_0_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_0_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 0
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_0_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -148,10 +246,24 @@ MonoBehaviour:
     - position:
         row: 1
         column: 1
-      cellType: 0
+      cellType: 2
       box:
-        boxId: box_1_0
-        targetColor: 13
+        boxId: box_1_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_1_2
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -162,24 +274,10 @@ MonoBehaviour:
     - position:
         row: 1
         column: 3
-      cellType: 7
+      cellType: 2
       box:
-        boxId: box_1_1
-        targetColor: 1
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: tunnel_1_2
-      keyId: 
-      lockId: 
-    - position:
-        row: 1
-        column: 2
-      cellType: 1
-      box:
-        boxId: box_1_2
-        targetColor: 7
+        boxId: box_1_3
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -188,11 +286,53 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 0
+        row: 1
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_1_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
         column: 5
-      cellType: 1
+      cellType: 4
       box:
         boxId: box_1_3
+        targetColor: 1
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 3
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 6
+      cellType: 3
+      box:
+        boxId: box_2_6
+        targetColor: 8
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 7
+      cellType: 3
+      box:
+        boxId: box_3_6
         targetColor: 3
         capacity: 24
         isHidden: 0
@@ -202,26 +342,40 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 2
-        column: 4
-      cellType: 7
+        row: 1
+        column: 8
+      cellType: 3
       box:
-        boxId: box_1_4
+        boxId: box_1_5
         targetColor: 9
         capacity: 24
         isHidden: 0
         frozenDurability: 0
       pinId: 
-      tunnelId: tunnel_2_4
+      tunnelId: 
       keyId: 
       lockId: 
     - position:
         row: 1
-        column: 6
-      cellType: 0
+        column: 9
+      cellType: 4
       box:
-        boxId: box_1_5
-        targetColor: 8
+        boxId: box_1_7
+        targetColor: 7
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 3
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_1_8
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -231,10 +385,52 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 1
-        column: 7
+        column: 11
       cellType: 2
       box:
-        boxId: box_1_7
+        boxId: box_1_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_1_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_1_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 1
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_1_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -260,10 +456,10 @@ MonoBehaviour:
     - position:
         row: 2
         column: 1
-      cellType: 1
+      cellType: 2
       box:
-        boxId: box_2_0
-        targetColor: 8
+        boxId: box_2_1
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -274,9 +470,107 @@ MonoBehaviour:
     - position:
         row: 2
         column: 2
+      cellType: 2
+      box:
+        boxId: box_2_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_2_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_2_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 5
       cellType: 1
       box:
-        boxId: box_2_1
+        boxId: box_2_3
+        targetColor: 1
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 6
+      cellType: 3
+      box:
+        boxId: box_2_4
+        targetColor: 9
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 7
+      cellType: 1
+      box:
+        boxId: box_2_5
+        targetColor: 9
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 8
+      cellType: 1
+      box:
+        boxId: box_3_3
+        targetColor: 3
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 9
+      cellType: 1
+      box:
+        boxId: box_2_7
         targetColor: 2
         capacity: 24
         isHidden: 0
@@ -286,67 +580,67 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 0
-        column: 2
-      cellType: 1
-      box:
-        boxId: box_2_2
-        targetColor: 7
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 1
-        column: 5
-      cellType: 1
-      box:
-        boxId: box_2_3
-        targetColor: 8
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
         row: 2
-        column: 5
-      cellType: 1
-      box:
-        boxId: box_2_4
-        targetColor: 5
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 2
-        column: 6
-      cellType: 1
-      box:
-        boxId: box_2_5
-        targetColor: 1
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 2
-        column: 7
+        column: 10
       cellType: 2
       box:
-        boxId: box_2_7
+        boxId: box_2_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_2_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_2_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_2_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 2
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_2_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -372,21 +666,7 @@ MonoBehaviour:
     - position:
         row: 3
         column: 1
-      cellType: 1
-      box:
-        boxId: box_3_0
-        targetColor: 1
-        capacity: 24
-        isHidden: 0
-        frozenDurability: 0
-      pinId: 
-      tunnelId: 
-      keyId: 
-      lockId: 
-    - position:
-        row: 3
-        column: 2
-      cellType: 0
+      cellType: 2
       box:
         boxId: box_3_1
         targetColor: 0
@@ -399,11 +679,11 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 3
-        column: 3
-      cellType: 1
+        column: 2
+      cellType: 2
       box:
         boxId: box_3_2
-        targetColor: 5
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -412,9 +692,9 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 4
-        column: 5
-      cellType: 0
+        row: 3
+        column: 3
+      cellType: 2
       box:
         boxId: box_3_3
         targetColor: 0
@@ -427,11 +707,11 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 3
-        column: 5
-      cellType: 0
+        column: 4
+      cellType: 2
       box:
-        boxId: box_3_4
-        targetColor: 11
+        boxId: box_3_5
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -441,11 +721,25 @@ MonoBehaviour:
       lockId: 
     - position:
         row: 3
+        column: 5
+      cellType: 7
+      box:
+        boxId: box_4_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: tunnel_4_1
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
         column: 6
       cellType: 1
       box:
-        boxId: box_3_5
-        targetColor: 7
+        boxId: box_0_3
+        targetColor: 8
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -456,9 +750,107 @@ MonoBehaviour:
     - position:
         row: 3
         column: 7
-      cellType: 2
+      cellType: 0
+      box:
+        boxId: box_3_4
+        targetColor: 4
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 8
+      cellType: 3
       box:
         boxId: box_3_7
+        targetColor: 9
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 9
+      cellType: 7
+      box:
+        boxId: box_4_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: tunnel_4_5
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_3_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_3_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_3_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_3_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 3
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_3_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -484,10 +876,10 @@ MonoBehaviour:
     - position:
         row: 4
         column: 1
-      cellType: 1
+      cellType: 2
       box:
         boxId: box_4_1
-        targetColor: 3
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -498,10 +890,10 @@ MonoBehaviour:
     - position:
         row: 4
         column: 2
-      cellType: 1
+      cellType: 2
       box:
         boxId: box_4_2
-        targetColor: 6
+        targetColor: 0
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -528,7 +920,7 @@ MonoBehaviour:
         column: 4
       cellType: 2
       box:
-        boxId: box_4_4
+        boxId: box_4_2
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -538,14 +930,14 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 3
-        column: 4
-      cellType: 1
+        row: 4
+        column: 5
+      cellType: 3
       box:
-        boxId: box_4_5
-        targetColor: 3
+        boxId: box_4_4
+        targetColor: 1
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -554,10 +946,10 @@ MonoBehaviour:
     - position:
         row: 4
         column: 6
-      cellType: 1
+      cellType: 3
       box:
-        boxId: box_4_6
-        targetColor: 6
+        boxId: box_3_2
+        targetColor: 2
         capacity: 24
         isHidden: 0
         frozenDurability: 0
@@ -568,9 +960,107 @@ MonoBehaviour:
     - position:
         row: 4
         column: 7
+      cellType: 3
+      box:
+        boxId: box_4_5
+        targetColor: 7
+        capacity: 24
+        isHidden: 1
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 8
+      cellType: 3
+      box:
+        boxId: box_4_6
+        targetColor: 3
+        capacity: 24
+        isHidden: 1
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 9
+      cellType: 1
+      box:
+        boxId: box_0_7
+        targetColor: 8
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 10
       cellType: 2
       box:
-        boxId: box_4_7
+        boxId: box_4_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_4_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_4_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_4_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 4
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_4_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -640,7 +1130,7 @@ MonoBehaviour:
         column: 4
       cellType: 2
       box:
-        boxId: box_5_4
+        boxId: box_5_0
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -654,7 +1144,7 @@ MonoBehaviour:
         column: 5
       cellType: 2
       box:
-        boxId: box_5_5
+        boxId: box_5_1
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -668,7 +1158,7 @@ MonoBehaviour:
         column: 6
       cellType: 2
       box:
-        boxId: box_5_6
+        boxId: box_5_2
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -682,7 +1172,1995 @@ MonoBehaviour:
         column: 7
       cellType: 2
       box:
-        boxId: box_5_7
+        boxId: box_5_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_5_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_5_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_5_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_5_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_5_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_5_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 5
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_5_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_6_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_6_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_6_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_6_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_6_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_6_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_6_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_6_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_6_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_6_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_6_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_6_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_6_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_6_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 6
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_6_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_7_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_7_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_7_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_7_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_7_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_7_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_7_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_7_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_7_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_7_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_7_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_7_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_7_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_7_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 7
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_7_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_8_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_8_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_8_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_8_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_8_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_8_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_8_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_8_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_8_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_8_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_8_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_8_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_8_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_8_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 8
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_8_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_9_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_9_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_9_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_9_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_9_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_9_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_9_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_9_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_9_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_9_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_9_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_9_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_9_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_9_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 9
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_9_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_10_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_10_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_10_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_10_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_10_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_10_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_10_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_10_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_10_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_10_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_10_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_10_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_10_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_10_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 10
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_10_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_11_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_11_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_11_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_11_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_11_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_11_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_11_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_11_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_11_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_11_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_11_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_11_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_11_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_11_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 11
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_11_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_12_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_12_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_12_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_12_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_12_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_12_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_12_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_12_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_12_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_12_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_12_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_12_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_12_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_12_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 12
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_12_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_13_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_13_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_13_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_13_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_13_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_13_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_13_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_13_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_13_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_13_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_13_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_13_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_13_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_13_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 13
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_13_14
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 0
+      cellType: 2
+      box:
+        boxId: box_14_0
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 1
+      cellType: 2
+      box:
+        boxId: box_14_1
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 2
+      cellType: 2
+      box:
+        boxId: box_14_2
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 3
+      cellType: 2
+      box:
+        boxId: box_14_3
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 4
+      cellType: 2
+      box:
+        boxId: box_14_4
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 5
+      cellType: 2
+      box:
+        boxId: box_14_5
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 6
+      cellType: 2
+      box:
+        boxId: box_14_6
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 7
+      cellType: 2
+      box:
+        boxId: box_14_7
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 8
+      cellType: 2
+      box:
+        boxId: box_14_8
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 9
+      cellType: 2
+      box:
+        boxId: box_14_9
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 10
+      cellType: 2
+      box:
+        boxId: box_14_10
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 11
+      cellType: 2
+      box:
+        boxId: box_14_11
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 12
+      cellType: 2
+      box:
+        boxId: box_14_12
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 13
+      cellType: 2
+      box:
+        boxId: box_14_13
+        targetColor: 0
+        capacity: 24
+        isHidden: 0
+        frozenDurability: 0
+      pinId: 
+      tunnelId: 
+      keyId: 
+      lockId: 
+    - position:
+        row: 14
+        column: 14
+      cellType: 2
+      box:
+        boxId: box_14_14
         targetColor: 0
         capacity: 24
         isHidden: 0
@@ -693,121 +3171,121 @@ MonoBehaviour:
       lockId: 
   stackBoard:
     columns: 7
-    rows: 18
+    rows: 14
     stacks:
     - useExplicitPosition: 1
       position:
-        row: 0
-        column: 0
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
-        column: 1
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
-        column: 2
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
+        row: 9
         column: 3
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
-        column: 4
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
-        column: 5
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 0
-        column: 6
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 0
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 1
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 2
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 3
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 1
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 4
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 1
-        column: 5
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 10
         column: 3
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 2
-        column: 1
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 2
+        row: 0
         column: 2
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 8
+        column: 2
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 3
+        column: 4
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 5
+        column: 2
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 0
+        column: 6
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 4
+        column: 1
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 1
+        column: 1
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 3
+        column: 2
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 13
+        column: 2
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 12
+        column: 0
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 1
+        column: 5
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 2
+        column: 0
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 3
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 13
+        column: 1
+      blocksBottomToTop: 080000000800000008000000080000000800000008000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 10
+        column: 0
       blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 2
-        column: 3
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 2
         column: 4
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 2
+        row: 6
         column: 5
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
@@ -819,652 +3297,442 @@ MonoBehaviour:
       position:
         row: 3
         column: 0
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 3
-        column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 1
+        row: 0
+        column: 0
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 3
+        row: 1
         column: 2
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 3
         column: 3
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 3
+        row: 0
         column: 4
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 3
         column: 5
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 14
+        row: 4
+        column: 0
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 1
+        column: 0
+      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 7
         column: 3
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 4
-        column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 4
-        column: 2
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 4
         column: 3
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 4
+        row: 1
         column: 4
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 4
-        column: 5
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 1
+        row: 8
+        column: 4
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 4
         column: 6
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 0
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 1
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 2
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 3
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 4
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 5
-        column: 5
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 0
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 1
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 2
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 1
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 3
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 4
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 5
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 6
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 0
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 2
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 3
-      blocksBottomToTop: 020000000200000002000000020000000200000002000000
-      isHidden: 1
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 4
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 7
-        column: 5
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 0
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 1
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 2
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 3
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 4
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 15
-        column: 3
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 8
-        column: 6
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 0
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 2
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 3
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 1
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 4
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 9
-        column: 5
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 10
-        column: 0
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 16
-        column: 5
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 10
         column: 2
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 5
+        column: 1
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 0
+        column: 5
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 3
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 8
+        column: 5
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 5
+        column: 5
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 0
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 9
+        column: 0
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 12
+        column: 3
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 2
+        column: 1
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 4
+      blocksBottomToTop: 090000000900000009000000090000000900000009000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 2
+        column: 5
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 6
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 7
         column: 0
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 10
-        column: 4
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
         column: 5
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 10
-        column: 6
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
-        column: 0
-      blocksBottomToTop: 010000000100000001000000010000000100000001000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
-        column: 1
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
-        column: 4
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
-        column: 3
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
+        row: 7
         column: 2
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 11
-        column: 5
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 15
-        column: 0
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 12
-        column: 1
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 12
-        column: 2
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 17
-        column: 2
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 15
-        column: 4
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 12
-        column: 5
-      blocksBottomToTop: 080000000800000008000000080000000800000008000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 12
-        column: 6
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 13
-        column: 0
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 17
-        column: 3
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 13
-        column: 2
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 13
-        column: 3
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 16
-        column: 1
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 13
-        column: 5
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
-        column: 0
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
-        column: 1
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
-        column: 2
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 4
-        column: 0
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
-        column: 4
-      blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 10
-        column: 5
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 14
-        column: 6
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+        column: 2
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 12
-        column: 0
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 15
         column: 1
-      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 15
-        column: 2
+        row: 7
+        column: 5
       blocksBottomToTop: 070000000700000007000000070000000700000007000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 8
+        column: 0
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 1
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 0
+        column: 3
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 8
+        column: 3
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 4
         column: 5
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 5
+        column: 4
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 8
+        column: 6
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 1
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 9
+        column: 1
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 12
         column: 4
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 15
+        row: 3
+        column: 1
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 9
+        column: 4
+      blocksBottomToTop: 020000000200000002000000020000000200000002000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 9
         column: 5
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 16
-        column: 0
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 13
-        column: 4
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 16
-        column: 2
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 16
+        row: 2
         column: 3
-      blocksBottomToTop: 070000000700000007000000070000000700000007000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 16
-        column: 4
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 10
         column: 1
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 16
-        column: 6
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 17
+        row: 5
         column: 0
-      blocksBottomToTop: 060000000600000006000000060000000600000006000000
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 17
+        row: 0
         column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 10
+        column: 4
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 7
+        column: 1
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 10
+        column: 6
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 0
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 8
+        column: 1
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 2
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 5
+        column: 3
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 12
-        column: 3
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
+        column: 5
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 5
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 4
+        column: 4
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 7
+        column: 4
+      blocksBottomToTop: 030000000300000003000000030000000300000003000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 12
+        column: 2
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 6
+        column: 2
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 9
+        column: 2
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 11
+        column: 4
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 12
+        column: 6
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
         row: 13
-        column: 1
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
+        column: 0
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
-        row: 17
-        column: 4
-      blocksBottomToTop: 040000000400000004000000040000000400000004000000
+        row: 2
+        column: 2
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
+      isHidden: 0
+    - useExplicitPosition: 1
+      position:
+        row: 1
+        column: 3
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
       isHidden: 0
   keys: []
   locks: []
   tunnels:
-  - tunnelId: tunnel_1_2
+  - tunnelId: tunnel_4_1
     position:
-      row: 1
-      column: 3
-    direction: 0
-    contents:
-    - boxId: tunnel_1_3_box_0
-      targetColor: 5
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_1_3_box_1
-      targetColor: 4
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-  - tunnelId: tunnel_0_2
-    position:
-      row: 2
-      column: 3
-    direction: 3
-    contents:
-    - boxId: tunnel_2_3_box_0
-      targetColor: 5
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_2_3_box_1
-      targetColor: 6
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_2_3_box_2
-      targetColor: 4
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-  - tunnelId: tunnel_0_5
-    position:
-      row: 1
-      column: 4
-    direction: 2
-    contents:
-    - boxId: tunnel_1_4_box_0
-      targetColor: 8
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-    - boxId: tunnel_1_4_box_1
-      targetColor: 6
-      capacity: 24
-      isHidden: 0
-      frozenDurability: 0
-  - tunnelId: tunnel_2_4
-    position:
-      row: 2
-      column: 4
+      row: 3
+      column: 5
     direction: 1
     contents:
-    - boxId: tunnel_2_4_box_0
-      targetColor: 7
+    - boxId: tunnel_3_1_box_0
+      targetColor: 3
       capacity: 24
       isHidden: 0
       frozenDurability: 0
-    - boxId: tunnel_2_4_box_1
-      targetColor: 6
+    - boxId: tunnel_3_1_box_1
+      targetColor: 2
       capacity: 24
       isHidden: 0
       frozenDurability: 0
-    - boxId: tunnel_2_4_box_2
-      targetColor: 4
+  - tunnelId: tunnel_4_5
+    position:
+      row: 3
+      column: 9
+    direction: 0
+    contents:
+    - boxId: tunnel_3_5_box_0
+      targetColor: 5
+      capacity: 24
+      isHidden: 0
+      frozenDurability: 0
+    - boxId: tunnel_3_5_box_1
+      targetColor: 5
       capacity: 24
       isHidden: 0
       frozenDurability: 0

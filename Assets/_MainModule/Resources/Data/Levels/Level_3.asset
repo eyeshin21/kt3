@@ -679,7 +679,7 @@ MonoBehaviour:
       position:
         row: 6
         column: 0
-      blocksBottomToTop: 050000000500000005000000
+      blocksBottomToTop: 050000000500000005000000050000000500000005000000
       isHidden: 0
     - useExplicitPosition: 1
       position:
@@ -752,12 +752,6 @@ MonoBehaviour:
         row: 5
         column: 0
       blocksBottomToTop: 050000000500000005000000050000000500000005000000
-      isHidden: 0
-    - useExplicitPosition: 1
-      position:
-        row: 6
-        column: 6
-      blocksBottomToTop: 050000000500000005000000
       isHidden: 0
   keys: []
   locks: []
