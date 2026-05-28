@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba12eb74e072f2e47ac0b37ede96d802, type: 3}
   m_Name: Level_18
   m_EditorClassIdentifier: 
-  level: 8
+  level: 18
   levelType: 0
   waitingSlots: 5
   gridCellBoardData:
@@ -244,14 +244,14 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 2
+        row: 3
         column: 2
       cellType: 3
       box:
         boxId: box_2_4
         targetColor: 9
         capacity: 24
-        isHidden: 1
+        isHidden: 0
         frozenDurability: 0
       pinId: 
       tunnelId: 
@@ -342,14 +342,14 @@ MonoBehaviour:
       keyId: 
       lockId: 
     - position:
-        row: 3
+        row: 2
         column: 2
-      cellType: 1
+      cellType: 3
       box:
         boxId: box_3_3
         targetColor: 3
         capacity: 24
-        isHidden: 0
+        isHidden: 1
         frozenDurability: 0
       pinId: 
       tunnelId: 
